@@ -1,0 +1,187 @@
+:root {
+  --colorPrimary: #635546;
+  --colorPrimaryDarker: #927F60;
+  --colorAccent: #DAC8A2;
+  --colorBackgroundPrimary: #C5C5B7;
+  --colorLightBackground: #F2EDE1;
+  --colorWhite: #FFFFFF;
+  --colorDarkGray: #333333;
+  --colorGreen: #C1DB72;
+  --colorGrey: #444444;
+  --colorPink: #FF00AD;
+  --colorBlack: #000000;
+}
+
+::-webkit-scrollbar {
+  width: 12px
+}
+
+::-webkit-scrollbar-track {
+  background: #dac8a200;
+  border-radius: 0px
+}
+
+::-webkit-scrollbar-thumb {
+  background: #635546;
+  border-radius: 0px
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #927F60; 
+}
+
+body {
+  background-color: #C5C5B7;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn {
+  background-color: #635546;
+}
+
+.btn:hover  {
+  background-color: #927F60;
+}
+
+.bg_header {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#927F60, #635546);
+  transform: skewY(-6deg);
+  transform-origin: top left;
+}
+
+.carousel {
+  width: 360px;
+  height: 640px;
+}
+
+.animate-opacity {
+  animation: opac 0.8s
+}
+
+.animate-opacity-2nd {
+  animation: opac 1.8s
+}
+
+.animate-top {
+  position: relative;
+  animation: animatetop 0.4s
+}
+
+.animate-left {
+  position: relative;
+  animation: animateleft 0.7s
+}
+
+.animate-right {
+  position: relative;
+  animation: animateright 0.7s
+}
+
+.animate-right-2nd {
+  position: relative;
+  animation: animateright 1.2s
+}
+
+@keyframes opac {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0
+  }
+  to {
+    left: 0;
+    opacity: 1
+  }
+}
+
+@keyframes animateright {
+  from {
+    left: 300px;
+    opacity: 0
+  }
+  to {
+    left: 0;
+    opacity: 1
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+.smartphone {
+  position: relative;
+  width: 392px;
+  height: 760px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #080808;
+  border-radius: 50%;
+}
+
+.smartphone .content {
+  width: 360px;
+  height: 640px;
+}
+
+.collapsible-body {
+  background-color: #F2EDE1;
+}
+
+.carousel-item {
+  width: 360px;
+  height: 640px;
+}
